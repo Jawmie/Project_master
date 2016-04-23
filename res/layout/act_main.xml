@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:weightSum="1">
+
+    <ListView
+            android:id="@+id/nodeListView"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_alignBottom="@+id/emptyView" android:layout_weight="0.17"/>
+
+    <TextView android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20px"
+            android:text="Module Not Connected"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paired devices:"
+            android:id="@+id/pairView"
+            android:textColor="#ff34ff06"
+            android:textSize="25dp"
+            android:layout_below="@+id/offButt"
+            android:layout_alignLeft="@+id/availViewList"
+            android:layout_alignStart="@+id/availViewList" />
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:id="@+id/blueView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/onButt"
+            android:layout_alignStart="@+id/onButt"
+            android:layout_below="@+id/textView2" android:layout_weight="0.62"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:layout_weight="0.15" android:gravity="bottom|center_horizontal">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turn On"
+                android:id="@+id/onButt"
+                android:clickable="true"
+                android:onClick="on" android:layout_below="@+id/imageView" android:layout_alignParentStart="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paired"
+            android:onClick="listPaired"
+            android:id="@+id/listButt"
+            android:layout_alignTop="@+id/button2" android:layout_alignParentEnd="true"/>
+
+        <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Turn Off"
+                    android:onClick="off"
+                    android:id="@+id/offButt"
+                    android:layout_below="@+id/onButt"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
