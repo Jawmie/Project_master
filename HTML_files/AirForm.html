@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            width: 100%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -200px;
+            margin-left: -200px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Air Quality Module</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+    <h2><b><em>Enter room to search: </em></b></h2>
+    <form action = "/AirServlet" method="post or get">
+    <t>Room:<br /><br />
+    <input type="text" name = "room"/>
+    <br /><br />
+    Date From: (YYYY-MM-DD)<br /><br />
+    <input type="text" name = "datef"/>
+    <br /><br />
+    Time To: (YYYY-MM-DD)<br /><br />
+    <input type="text" name = "datet"/>
+    <br /><br /></t>
+    <!--/*<input type="submit" value = "Submit"/> -->
+    <!--the text in the quotes after value will appear on the button-->
+    <input style="background-image:url('img/searchButt.png'); width: 120px; height: 24px;" type="submit" value=""/>
+    <input style="background-image:url('img/searchAllButt.png'); width: 120px; height: 24px;" type="submit" value=""/>
+</form>
+</div>
+</body>
+</html>
